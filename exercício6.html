@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jogo da velha</title>
+</head>
+<body>
+  
+  <script>
+    let matriz = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""]
+      ];
+      
+      let turno = 1;
+      
+      function exibirTabuleiro() {
+        for (let i = 0; i < matriz.length; i++) {
+          console.log(matriz[i].join(" | "));
+        }
+      }
+      
+      function verificarVencedor() {
+       
+        for (let i = 0; i < 3; i++) {
+          if (matriz[i][0] && matriz[i][0] === matriz[i][1] && matriz[i][1] === matriz[i][2]) return matriz[i][0];
+          if (matriz[0][i] && matriz);
+        }
+    }
+  </script>
+
+</body>
+</html>
+             

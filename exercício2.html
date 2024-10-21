@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cadastro, valor e preço dos produtos da(3x5)</title>
+</head>
+<body>
+  
+  <script>
+    let produtos = ["Prod1", "Prod2", "Prod3", "Prod4", "Prod5", "Prod6", "Prod7", "Prod8", "Prod9", "Prod10"];
+    let precos = [100, 440, 150, 30, 250, 10, 200, 45, 95, 80];
+    
+    
+    let valorMaximo = parseFloat(prompt("Digite um valor máximo:"));
+    
+    
+    for (let i = 0; i < produtos.length; i++) {
+      if (precos[i] <= valorMaximo) { 
+        console.log(`Produto: ${produtos[i]}, Preço: ${precos[i]}`);
+      }
+    }
+  </script>
+
+</body>
+</html>

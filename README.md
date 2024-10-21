@@ -1,0 +1,2 @@
+# arrays exercicios
+ arrays resolvidos
